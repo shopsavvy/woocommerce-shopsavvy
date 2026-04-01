@@ -1,0 +1,169 @@
+/**
+ * ShopSavvy Admin Settings Styles
+ *
+ * @package ShopSavvy
+ */
+
+.shopsavvy-settings-wrap {
+    max-width: 800px;
+}
+
+.shopsavvy-settings-wrap h1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.shopsavvy-logo {
+    font-size: 28px;
+}
+
+/* Usage card */
+.shopsavvy-usage-card {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-left: 4px solid #0073aa;
+    border-radius: 2px;
+    padding: 16px 20px;
+    margin: 16px 0 24px;
+}
+
+.shopsavvy-usage-card h2 {
+    margin: 0 0 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1d2327;
+}
+
+.shopsavvy-usage-grid {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.shopsavvy-usage-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.shopsavvy-usage-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #646970;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.shopsavvy-usage-value {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1d2327;
+}
+
+.shopsavvy-progress-bar {
+    width: 200px;
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.shopsavvy-progress-fill {
+    height: 100%;
+    background: #0073aa;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.shopsavvy-usage-percent {
+    font-size: 13px;
+    color: #646970;
+    font-weight: 500;
+}
+
+/* Status indicators */
+.shopsavvy-status {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.shopsavvy-status-pending {
+    color: #996800;
+}
+
+.shopsavvy-status-valid {
+    color: #007017;
+}
+
+.shopsavvy-status-invalid {
+    color: #d63638;
+}
+
+/* Cache management section */
+.shopsavvy-cache-actions {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 2px;
+    padding: 16px 20px;
+    margin: 24px 0;
+}
+
+.shopsavvy-cache-actions h2 {
+    margin: 0 0 8px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.shopsavvy-cache-actions p {
+    margin: 0 0 12px;
+    color: #646970;
+}
+
+/* Footer */
+.shopsavvy-footer {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #e0e0e0;
+    color: #646970;
+    font-size: 13px;
+}
+
+.shopsavvy-footer a {
+    color: #0073aa;
+    text-decoration: none;
+}
+
+.shopsavvy-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Form field tweaks */
+.shopsavvy-settings-wrap .form-table th {
+    width: 180px;
+    padding: 20px 10px 20px 0;
+}
+
+.shopsavvy-settings-wrap .form-table td {
+    padding: 15px 10px;
+}
+
+.shopsavvy-settings-wrap .form-table .description {
+    margin-top: 6px;
+    color: #646970;
+}
+
+/* Responsive */
+@media (max-width: 782px) {
+    .shopsavvy-usage-grid {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .shopsavvy-progress-bar {
+        width: 100%;
+    }
+}
